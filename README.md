@@ -2,6 +2,7 @@
 
 [![reproduce](https://github.com/AILabFr8tech/voice-negotiation-agents/actions/workflows/reproduce.yml/badge.svg)](https://github.com/AILabFr8tech/voice-negotiation-agents/actions/workflows/reproduce.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24211549.svg)](https://doi.org/10.5281/zenodo.24211549)
 
 This repository holds the code and data behind the paper:
 
@@ -150,10 +151,16 @@ Please cite the paper, and the software if you use the code or data:
             Nicol{\'a}s-D{\'i}az, Jorge Octavio and Leon-Dominguez, Umberto},
   organization = {AI Lab, Freight Technologies Inc.},
   url    = {https://github.com/AILabFr8tech/voice-negotiation-agents},
+  doi    = {10.5281/zenodo.24211549},
+  publisher = {Zenodo},
   license = {Apache-2.0},
   year   = {2026}
 }
 ```
+
+The software is archived on Zenodo: [10.5281/zenodo.24211549](https://doi.org/10.5281/zenodo.24211549)
+(all versions) and [10.5281/zenodo.24211550](https://doi.org/10.5281/zenodo.24211550) (v1.0.0, the
+version used in the paper).
 
 GitHub's **Cite this repository** button (from [CITATION.cff](CITATION.cff)) gives
 the same citation in other formats.

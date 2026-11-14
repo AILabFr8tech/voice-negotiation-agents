@@ -29,6 +29,14 @@ authors:
     given-names: "Umberto"
     affiliation: "AI Lab, Freight Technologies Inc.; School of Psychology, University of Monterrey"
     orcid: "https://orcid.org/0000-0001-5170-2553"
+doi: "10.5281/zenodo.24211549"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24211549"
+    description: "All versions (resolves to the latest)"
+  - type: doi
+    value: "10.5281/zenodo.24211550"
+    description: "Version 1.0.0, the version used in the paper"
 repository-code: "https://github.com/AILabFr8tech/voice-negotiation-agents"
 url: "https://github.com/AILabFr8tech/voice-negotiation-agents"
 license: Apache-2.0
