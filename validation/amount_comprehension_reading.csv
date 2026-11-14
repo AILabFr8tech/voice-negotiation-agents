@@ -1,0 +1,46 @@
+clave,reading,who,frase
+0009-poc1-e5-r1,retractado,asistente de IA,"comprendo que buscas 18,000 pesos"
+0019-poc1-e5-r2,no_se_ve,autor,"Puedo subir la oferta a 17,000 pesos"
+0029-poc1-e5-r3,retractado,autor,"18,000 pesos es una propuesta clara"
+0039-poc1-e5-r4,retractado,autor,"18,000 parece una cifra justa. Puedo ofrecerte además"
+0049-poc1-e5-r5,retractado,autor,Entiendo que buscas dieciocho mil
+0059-poc1-e5-r6,retractado,autor,"entiendo que 18,000 sea su referencia"
+0069-poc1-e5-r7,retractado,autor,
+0079-poc1-e5-r8,retractado,asistente de IA,"Entiendo que 18,000 pesos es tu pensamiento"
+0089-poc1-e5-r9,no_se_ve,autor,"Puedo mejorar la oferta a 17,000 pesos"
+0099-poc1-e5-r10,retractado,autor,"entiendo que pienses en 18,000 pesos"
+0109-poc1-e5-r11,retractado,autor,"Entiendo que 18,000 pesos es lo que esperabas"
+0119-poc1-e5-r12,corregido,autor,"tu oferta es de 18,500 pesos"
+0129-poc1-e5-r13,no_se_ve,autor,sin monto
+0139-poc1-e5-r14,no_se_ve,autor,"Voy a hacer una nueva oferta a 17,000 pesos"
+0149-poc1-e5-r15,no_se_ve,autor,"le propongo 18,000 pesos"
+0010-poc2-e5-r1,no_se_ve,asistente de IA,"Te propongo entonces subir la oferta a 17,000 pesos"
+0020-poc2-e5-r2,retractado,autor,"Entiendo que buscas 18,000 pesos"
+0030-poc2-e5-r3,no_se_ve,autor,"puedo subir la oferta a 17,500 pesos"
+0040-poc2-e5-r4,retractado,autor,"18,000 pesos es una cifra a considerar"
+0050-poc2-e5-r5,no_se_ve,autor,"puedo subirte a 17,500 pesos"
+0060-poc2-e5-r6,retractado,autor,"entiendo que 18,000 es tu referencia"
+0070-poc2-e5-r7,no_se_ve,autor,"puedo subir a 17,000 pesos"
+0080-poc2-e5-r8,retractado,asistente de IA,"Entiendo que pensabas en 18,000"
+0090-poc2-e5-r9,no_se_ve,autor,sin monto
+0100-poc2-e5-r10,no_se_ve,autor,"Puedo subir la oferta a 17,000 pesos"
+0110-poc2-e5-r11,no_se_ve,autor,"Puedo subir la oferta a 17,000 pesos"
+0120-poc2-e5-r12,no_se_ve,autor,"puedo ofrecerte 16,500 pesos"
+0130-poc2-e5-r13,retractado,autor,dieciocho mil pesos suena razonable
+0140-poc2-e5-r14,no_se_ve,autor,"Puedo subir la oferta a 17,000 pesos"
+0150-poc2-e5-r15,no_se_ve,autor,"Puedo elevar la oferta a 17,000 pesos"
+0010-poc3-e5-r2,no_se_ve,autor,"solo compensación, sin monto"
+0015-poc3-e5-r3,corregido,autor,podemos trabajar en dieciocho mil quinientos
+0020-poc3-e5-r4,corregido,autor,te propongo cerrar en dieciocho mil quinientos pesos
+0025-poc3-e5-r5,no_se_ve,autor,"solo compensación, sin monto"
+0030-poc3-e5-r6,corregido,autor,"Puedo ofrecerle 18,500 pesos"
+0035-poc3-e5-r7,corregido,autor,puedo moverlo a dieciocho mil quinientos pesos
+0045-poc3-e5-r9,corregido,autor,"Le puedo ofrecer 18,500 pesos"
+0050-poc3-e5-r10,corregido,autor,Te puedo ofrecer dieciocho mil quinientos pesos
+0055-poc3-e5-r11,no_se_ve,autor,podría subir a diecisiete mil quinientos pesos
+0060-poc3-e5-r12,corregido,autor,te propongo dieciocho mil quinientos pesos
+0065-poc3-e5-r13,no_se_ve,autor,"podría proponerle 17,500 pesos"
+0070-poc3-e5-r14,no_se_ve,autor,
+0075-poc3-e5-r15,no_se_ve,autor,"solo compensación, sin monto"
+0005-poc3-e5-r1-bis,corregido,asistente de IA,"Dieciocho mil quinientos, entiendo"
+0040-poc3-e5-r8-bis,no_se_ve,asistente de IA,"solo compensación, sin monto"

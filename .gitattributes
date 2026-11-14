@@ -1,0 +1,11 @@
+# Normalize text files to LF in the repository.
+* text=auto eol=lf
+
+# Media and archives are binary: never touch their bytes.
+*.wav binary
+*.mp3 binary
+*.ulaw binary
+*.png binary
+*.pdf binary
+*.xlsx binary
+*.zip binary

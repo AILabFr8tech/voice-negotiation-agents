@@ -1,0 +1,41 @@
+[project]
+name = "poc2-livekit"
+version = "0.1.0"
+description = "PoC2 — voice negotiation agent built on LiveKit Agents (Deepgram + ElevenLabs Flash + outbound SIP trunk over Twilio)"
+readme = "README.md"
+# livekit-agents 1.6.8 declares <3.15,>=3.10. Pinned to 3.12 like PoC1: not
+# because the SDK requires it, but so the comparison does not change Python
+# version between architectures.
+requires-python = ">=3.12"
+dependencies = [
+    # Agents SDK. The extras are the service plugins, and they are the same
+    # providers as PoC1 so that the comparison measures the framework and not
+    # the provider:
+    #   openai     -> LLM (gpt-4.1-mini, frozen for all 3 PoCs)
+    #   deepgram   -> STT (nova-3 / multi)
+    #   elevenlabs -> TTS (eleven_flash_v2_5)
+    #   silero     -> VAD, required by the audio turn detector
+    #
+    # The `turn-detector` extra is NOT added: it installs the **text-based**
+    # detection plugin (`MultilingualModel`), which is deprecated and removed in
+    # SDK 2.0. PoC2 uses the audio turn detector, `livekit.agents.inference.
+    # TurnDetector`, which ships inside livekit-agents and needs no separate
+    # installation. See CAPTURE_METRICS.md for the details of that choice.
+    "livekit-agents[deepgram,elevenlabs,openai,silero]>=1.6.8",
+    # LiveKit API client: `CreateSIPParticipantRequest` to originate the call
+    # over the trunk and `CreateAgentDispatchRequest` to put the agent in the
+    # room. It comes in as a dependency of livekit-agents, but it is declared
+    # explicitly because the dialer imports it directly (same criterion as
+    # `fastapi` in PoC1).
+    "livekit-api>=1.0.0",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.2",
+    "pyyaml>=6.0.3",
+]
+
+# What PoC1 needs and PoC2 does NOT, which is itself a result of the comparison:
+#   fastapi + uvicorn -> there is no TwiML server and no Media Stream WebSocket
+#   twilio            -> the call is originated through the LiveKit API, not
+#                        through Twilio's REST API; Twilio only provides the SIP
+#                        trunk to the PSTN
+# The ngrok tunnel is not needed either: nothing in PoC2 receives inbound webhooks.

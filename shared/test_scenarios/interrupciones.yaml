@@ -1,0 +1,28 @@
+# Clips del escenario de interrupciones (30 de septiembre de 2026).
+#
+# El arnés los reproduce ENCIMA del agente, un tiempo fijo después de que empieza
+# su respuesta. Dos tipos, con lo que se espera del agente:
+#
+#   interrupcion — el transportista toma la palabra: el agente debería callarse.
+#   apoyo        — un apoyo verbal ("ajá"): el agente debería seguir hablando.
+#
+# Las líneas son genéricas a propósito: tienen que tener sentido en cualquier
+# punto de la negociación, porque caen sobre la respuesta que toque.
+#
+# Se graban en `clips_interrupcion_crudos/<id>.wav` y se preparan con
+# `python -m shared.audio.interrupciones preparar`. Van aparte de los 49 clips
+# del guion para no tocar su manifiesto ni sus huellas.
+version: 1
+clips:
+  - {id: int_01, tipo: interrupcion, text: "Espéreme, espéreme… ¿cuánto dijo?"}
+  - {id: int_02, tipo: interrupcion, text: "No, no, perdón, déjeme decirle algo."}
+  - {id: int_03, tipo: interrupcion, text: "Oiga, ¿eso incluye las casetas?"}
+  - {id: int_04, tipo: interrupcion, text: "Ya, ya le entendí. ¿Y el anticipo?"}
+  - {id: int_05, tipo: interrupcion, text: "Momento, eso no fue lo que quedamos."}
+  - {id: int_06, tipo: interrupcion, text: "Perdón que lo interrumpa, pero así no me sale."}
+  - {id: apo_01, tipo: apoyo, text: "Ajá."}
+  - {id: apo_02, tipo: apoyo, text: "Mjm."}
+  - {id: apo_03, tipo: apoyo, text: "Sí."}
+  - {id: apo_04, tipo: apoyo, text: "Ok."}
+  - {id: apo_05, tipo: apoyo, text: "Ándale."}
+  - {id: apo_06, tipo: apoyo, text: "Sí, sí."}

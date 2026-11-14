@@ -1,0 +1,12 @@
+Validación del arnés contra un agente de retardo conocido
+voz del agente falso: e1_t3
+system: Windows-11-10.0.26200-SP0 · python 3.12.13
+
+error = latencia reportada por el arnés − latencia real (ms)
+condición        turnos medidos sin med.   sesgo  mediana  desv.     mín     máx   |máx|   |p95|
+retardo_300          40      38        2   -44.2    -46.0   10.4   -69.6   -24.0    69.6    59.0
+retardo_1000         40      40        0   -43.1    -42.3   10.5   -67.0   -16.0    67.0    58.5
+retardo_2500         40      40        0   -49.3    -48.0   11.3   -86.4   -30.5    86.4    74.8
+nivel_-6             40      40        0    -8.4    -10.1   17.4   -44.0    23.0    44.0    29.8
+nivel_-35            40      40        0    -6.3     -8.5   19.1   -53.0    45.0    53.0    39.0
+arranque_suave       40      40        0     0.6     -2.3   13.8   -27.4    41.0    41.0    26.9

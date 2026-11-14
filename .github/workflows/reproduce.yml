@@ -1,0 +1,63 @@
+name: reproduce
+
+# Runs the three test suites and regenerates every number in the paper from the
+# committed data tables, then checks that the regenerated LaTeX macros match the
+# committed ones (docs/report/latex/generated).
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+env:
+  PYTHONUTF8: "1"
+  PYTHONIOENCODING: utf-8
+
+jobs:
+  tests:
+    name: tests (${{ matrix.project }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - project: poc1_pipecat
+            paths: poc1_pipecat shared validation
+          - project: poc2_livekit
+            paths: poc2_livekit
+          - project: poc3_gpt_live
+            paths: poc3_gpt_live
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12.13"
+      - name: Run tests
+        run: uv run --project ${{ matrix.project }} --locked pytest -q -p no:cacheprovider ${{ matrix.paths }}
+
+  numbers:
+    name: regenerate paper numbers
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12.13"
+      - name: Regenerate macros
+        run: |
+          set -e
+          OUT="$RUNNER_TEMP/generated"
+          mkdir -p "$OUT"
+          run() { uv run --project analysis --locked python -m "$@"; }
+          run shared.metrics.analysis_report --output "$OUT"
+          run shared.metrics.interruptions_report --output "$OUT"
+          run shared.metrics.gpt_live_clock_report --output "$OUT/gpt_live_clock.tex"
+          run shared.metrics.timeline_report --output "$OUT/backchannel_timeline.tex"
+          run shared.metrics.cascade_stages_report --output "$OUT/cascade_stages.tex"
+      - name: Compare with committed macros
+        run: uv run --project analysis --locked python .github/ci/compare_generated.py docs/report/latex/generated "$RUNNER_TEMP/generated"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: generated
+          path: ${{ runner.temp }}/generated

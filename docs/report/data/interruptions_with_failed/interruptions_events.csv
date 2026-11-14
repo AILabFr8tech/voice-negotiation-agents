@@ -1,0 +1,47 @@
+poc,clave,scenario,repetition,turn,tipo,clip_id,fired,hablaba_en_la_reference,stopped,stop_time_ms,reply_latency_ms,line_duration_ms,advance_reason,text,event_stt,event_wer,cer_of_event,estado
+1,0001-poc1-e1-r1,1,1,T2,control,,1,1,0,10586.0,,,terminó de hablar,,,,,ok
+1,0001-poc1-e1-r1,1,1,T3,interrupcion,int_02,1,1,1,403.8,1908.8,2533.0,replicó a la interrupción y terminó,"No, no, perdón, déjeme decirle algo.","No, no, perdón. Déjeme decirle algo.",0.0,0.0,ok
+1,0001-poc1-e1-r1,1,1,T4,apoyo,apo_02,1,1,1,850.6,,,terminó de hablar,Mjm.,Ajá.,1.0,0.6667,ok
+1,0001-poc1-e1-r1,1,1,T5,control,,1,1,0,8411.0,,,terminó de hablar,,,,,ok
+1,0001-poc1-e1-r1,1,1,T6,interrupcion,int_03,1,1,1,250.0,1552.0,4797.0,replicó a la interrupción y terminó,"Oiga, ¿eso incluye las casetas?","Oiga, incluye las casetas,",0.2,0.1429,ok
+1,0001-poc1-e1-r1,1,1,T7,apoyo,apo_03,1,1,0,9038.8,,,terminó de hablar,Sí.,,1.0,1.0,ok
+2,0002-poc2-e1-r1,1,1,T2,control,,1,1,0,8574.0,,,terminó de hablar,,,,,ok
+2,0002-poc2-e1-r1,1,1,T3,interrupcion,int_02,1,1,1,943.7,3423.7,2540.0,replicó a la interrupción y terminó,"No, no, perdón, déjeme decirle algo.","No, no, perdón. Déjeme decirle algo.",0.0,0.0,ok
+2,0002-poc2-e1-r1,1,1,T4,apoyo,apo_02,1,1,1,1090.2,,,terminó de hablar,Mjm.,Ajá.,1.0,0.6667,ok
+2,0002-poc2-e1-r1,1,1,T5,control,,1,1,0,13810.0,,,terminó de hablar,,,,,ok
+2,0002-poc2-e1-r1,1,1,T6,interrupcion,int_03,1,1,1,874.0,1769.0,6227.0,replicó a la interrupción y terminó,"Oiga, ¿eso incluye las casetas?","Oiga, ¿eso incluye las casetas?",0.0,0.0,ok
+2,0002-poc2-e1-r1,1,1,T7,apoyo,apo_03,1,1,1,998.7,,,la sala se cerró después del evento,Sí.,Sí.,0.0,0.0,ok
+1,0003-poc1-e2-r1,2,1,T2,interrupcion,int_03,1,1,1,190.5,1686.5,6544.0,replicó a la interrupción y terminó,"Oiga, ¿eso incluye las casetas?","Oiga, ¿eso incluye las casetas?",0.0,0.0,ok
+1,0003-poc1-e2-r1,2,1,T3,apoyo,apo_03,1,1,1,287.7,,,terminó de hablar,Sí.,Sí.,0.0,0.0,ok
+1,0003-poc1-e2-r1,2,1,T4,control,,1,1,0,10920.0,,,terminó de hablar,,,,,ok
+1,0003-poc1-e2-r1,2,1,T5,interrupcion,int_04,1,1,1,180.9,1735.9,485.0,replicó a la interrupción y terminó,"Ya, ya le entendí. ¿Y el anticipo?","Ya, ya le entendí. ¿Y el anticipo?",0.0,0.0,ok
+1,0003-poc1-e2-r1,2,1,T6,apoyo,apo_04,1,1,0,10315.6,,,terminó de hablar,Ok.,,1.0,1.0,ok
+1,0003-poc1-e2-r1,2,1,T7,control,,0,,,,,,el agente no habló de corrido lo suficiente para disparar,,,,,ok
+2,0004-poc2-e2-r1,2,1,T2,interrupcion,int_03,1,1,1,831.0,2927.0,8517.0,replicó a la interrupción y terminó,"Oiga, ¿eso incluye las casetas?","Oiga, incluye las casetas,",0.2,0.1429,roja
+2,0004-poc2-e2-r1,2,1,T3,apoyo,apo_03,1,1,1,989.0,,,terminó de hablar,Sí.,Sí.,0.0,0.0,roja
+2,0004-poc2-e2-r1,2,1,T4,control,,1,1,0,6795.0,,,terminó de hablar,,,,,roja
+2,0004-poc2-e2-r1,2,1,T5,interrupcion,int_04,1,1,1,941.3,2148.3,8997.0,replicó a la interrupción y terminó,"Ya, ya le entendí. ¿Y el anticipo?","Ya, ya le entendí. ¿Y el anticipo?",0.0,0.0,roja
+2,0004-poc2-e2-r1,2,1,T6,apoyo,apo_04,1,1,1,1141.9,,,terminó de hablar,Ok.,Ok.,0.0,0.0,roja
+2,0004-poc2-e2-r1,2,1,T7,control,,0,,,,,,el agente no habló de corrido lo suficiente para disparar,,,,,roja
+1,0005-poc1-e3-r1,3,1,T2,apoyo,apo_04,1,1,1,333.4,,,terminó de hablar,Ok.,Ok.,0.0,0.0,ok
+1,0005-poc1-e3-r1,3,1,T3,control,,1,1,0,10250.0,,,terminó de hablar,,,,,ok
+1,0005-poc1-e3-r1,3,1,T4,interrupcion,int_04,1,1,1,225.7,1730.7,12236.0,replicó a la interrupción y terminó,"Ya, ya le entendí. ¿Y el anticipo?","Ya, ya le entendí. ¿Y el anticipo?",0.0,0.0,ok
+1,0005-poc1-e3-r1,3,1,T5,apoyo,apo_05,1,1,1,435.2,,,terminó de hablar,Ándale.,Ándele.,1.0,0.1667,ok
+1,0005-poc1-e3-r1,3,1,T6,control,,1,1,0,11832.0,,,venció el tope después del evento,,,,,ok
+1,0005-poc1-e3-r1,3,1,T7,interrupcion,int_05,1,1,0,7810.9,,,replicó a la interrupción y terminó,"Momento, eso no fue lo que quedamos.",,1.0,1.0,ok
+2,0006-poc2-e3-r1,3,1,T2,apoyo,apo_04,1,1,1,945.3,,,terminó de hablar,Ok.,Ok.,0.0,0.0,roja
+2,0006-poc2-e3-r1,3,1,T3,control,,1,1,0,15835.0,,,venció el tope después del evento,,,,,roja
+2,0006-poc2-e3-r1,3,1,T4,interrupcion,int_04,1,1,1,917.5,1980.5,1281.0,venció el tope después del evento,"Ya, ya le entendí. ¿Y el anticipo?","Ya, ya le entendí. ¿Y el anticipo?",0.0,0.0,roja
+2,0006-poc2-e3-r1,3,1,T5,apoyo,apo_05,0,,,,,,el agente no habló de corrido lo suficiente para disparar,Ándale.,,,,roja
+1,0007-poc1-e4-r1,4,1,T2,control,,1,1,0,4871.0,,,terminó de hablar,,,,,ok
+1,0007-poc1-e4-r1,4,1,T3,interrupcion,int_05,1,1,1,660.7,1555.7,4673.0,replicó a la interrupción y terminó,"Momento, eso no fue lo que quedamos.",Momento. Eso no fue lo que quedamos.,0.0,0.0,ok
+1,0007-poc1-e4-r1,4,1,T4,apoyo,apo_05,1,1,1,326.1,,,terminó de hablar,Ándale.,Ándele.,1.0,0.1667,ok
+1,0007-poc1-e4-r1,4,1,T5,control,,1,1,0,6282.0,,,terminó de hablar,,,,,ok
+1,0007-poc1-e4-r1,4,1,T6,interrupcion,int_06,1,1,1,875.5,1541.5,2649.0,replicó a la interrupción y terminó,"Perdón que lo interrumpa, pero así no me sale.","Perdón, que lo interrumpa, pero así no me sale.",0.0,0.0,ok
+1,0007-poc1-e4-r1,4,1,T7,apoyo,apo_06,1,1,1,474.1,,,terminó de hablar,"Sí, sí.","Sí, sí,",0.0,0.0,ok
+2,0008-poc2-e4-r1,4,1,T2,control,,1,1,0,6972.0,,,terminó de hablar,,,,,ok
+2,0008-poc2-e4-r1,4,1,T3,interrupcion,int_05,1,1,1,937.2,3343.2,3637.0,replicó a la interrupción y terminó,"Momento, eso no fue lo que quedamos.",Momento. Eso no fue en lo que quedamos.,0.1429,0.0882,ok
+2,0008-poc2-e4-r1,4,1,T4,apoyo,apo_05,1,1,1,972.3,,,terminó de hablar,Ándale.,Ándele.,1.0,0.1667,ok
+2,0008-poc2-e4-r1,4,1,T5,control,,1,1,0,9116.0,,,terminó de hablar,,,,,ok
+2,0008-poc2-e4-r1,4,1,T6,interrupcion,int_06,1,1,1,880.3,3012.3,1190.0,replicó a la interrupción y terminó,"Perdón que lo interrumpa, pero así no me sale.","Perdón que lo interrumpa, pero así no me sale.",0.0,0.0,ok
+2,0008-poc2-e4-r1,4,1,T7,apoyo,apo_06,1,1,1,904.6,,,terminó de hablar,"Sí, sí.","Sí, sí,",0.0,0.0,ok

@@ -1,0 +1,341 @@
+# Guion de pruebas, en forma de dato. Fuente única de las líneas del actor.
+#
+# RELACIÓN CON EL DOCUMENTO EN PROSA:
+# `shared/negotiation_engine/tests/guion_escenarios.md` es el guion para el
+# humano: explica qué mide cada escenario, cómo actuar, la rúbrica y el orden de
+# ejecución. **Este archivo es solo las líneas habladas**, en forma legible por
+# máquina, para pre-rellenar el archivo de referencia del WER
+# (`shared/metrics/referencia.py`) y no tener que teclear la transcripción desde
+# cero después de cada llamada.
+#
+# Si cambias una línea en el .md, cámbiala aquí también: son dos copias del
+# mismo texto y `shared/metrics/tests/test_escenarios.py` verifica que las
+# líneas de este archivo sigan apareciendo en el .md, para que la deriva se
+# detecte en los tests y no en medio de las 15 llamadas.
+#
+# Las líneas se transcriben **literales**, con acentos y puntuación: la
+# normalización de `shared/metrics/texto.py` se encarga del resto.
+#
+# RAMAS (`ramas:`) — el árbol de decisión, para el arnés
+# ------------------------------------------------------
+# `alternativas` es la lista de líneas que el actor HUMANO elige leyendo el .md.
+# `ramas` es la misma decisión en forma de dato, para que el arnés pueda actuar
+# el escenario sin humano. Las dos conviven a propósito y no se pueden desviar:
+# cada `linea` de una rama tiene que ser **idéntica** a la línea base o a una de
+# las `alternativas` del mismo turno, y un test lo verifica. Esa igualdad es
+# también lo que decide qué clip se reproduce: la base es `eN_tM` y la
+# alternativa en posición k es `eN_tM_altk`.
+#
+# Se evalúan EN ORDEN y gana la primera que se cumple; la última tiene que ser
+# `por_defecto: true` y no lleva condición. Condiciones válidas (cualquier otra
+# llave se rechaza al cargar, en vez de ignorarse en silencio):
+#
+#   monto_alcanzado: N          el agente dijo >= N en CUALQUIER momento
+#   monto_en_el_turno: N        el agente dijo >= N en ESTE turno
+#   compensacion_en_la_llamada  ofreció alguna compensación en algún momento
+#   compensacion_en_el_turno    ofreció alguna compensación en este turno
+#   palabras: [...]             alguna de estas frases aparece en este turno
+#   sin_palabras: [...]         ninguna de estas frases aparece en este turno
+#
+# Las dos primeras leen los montos con el mismo extractor del WER, así que
+# "dieciocho mil" y "18,000" son el mismo número. Las compensaciones se
+# reconocen con las frases de `negotiation_engine/compensaciones.yaml`.
+#
+# El árbol decide sobre lo que el agente DIJO, no sobre lo que registró: si
+# pronuncia una compensación sin llamar a `ofrecer_compensacion_no_monetaria`,
+# el arnés rama como si la hubiera ofrecido —que es lo que haría un
+# transportista— y la discrepancia contra `compensaciones_ofrecidas` del JSON es
+# justamente el hallazgo que el escenario 4 busca.
+
+version: v1
+
+# La misma configuración en los 5 escenarios, a propósito: variar los precios
+# metería una segunda variable. `precio_maximo` vive aquí (config de la corrida)
+# y nunca en el prompt.
+trip:
+  company: Freight Technologies
+  origin: Monterrey, Nuevo León
+  destination: Laredo, Texas
+  cargo_type: caja seca de 53 pies con carga general
+  carrier_name: Carlos
+  target_price: 18000
+  max_price: 21000
+
+scenarios:
+  - id: 1
+    name: Cooperativo
+    mide: >-
+      El camino feliz. Latencia y naturalidad en una negociación limpia. Es la
+      línea base contra la que se leen los demás.
+    expected_result: acuerdo
+    turns:
+      - id: T1
+        when: al contestar (el agente saluda primero)
+        linea: Sí, soy Carlos. Dígame.
+      - id: T2
+        when: cuando el agente da su primera oferta
+        linea: Va, suena interesante. ¿Me cuenta bien de la carga primero?
+      - id: T3
+        when: tras la respuesta del agente
+        linea: Ajá. ¿Y para cuándo la necesitan en Laredo?
+      - id: T4
+        when: tras la respuesta del agente
+        linea: Está bien. ¿Y en cuánto me dijo que quedaba el flete?
+      - id: T5
+        when: cuando el agente repite o da el monto
+        linea: Mmm. Está un poquito bajo, pero puede funcionar.
+      - id: T6
+        when: tras la respuesta del agente
+        linea: ¿Sabe qué? Si me lo deja parejo, lo tomo.
+      - id: T7
+        when: cuando el agente propone el cierre
+        linea: Perfecto. Quedamos así entonces.
+      - id: T8
+        when: si el agente pide confirmación explícita
+        linea: Sí, así quedamos. Confirmado.
+
+  - id: 2
+    name: Regateador moderado
+    mide: >-
+      Las concesiones decrecientes y si el anclaje del agente lo deja llegar al
+      objetivo de 18k. Convierte en evidencia deliberada el hallazgo accidental
+      de la llamada real del 3 de agosto.
+    expected_result: ambiguo (acuerdo o sin_acuerdo — cuál ocurre ES el dato)
+    turns:
+      - id: T1
+        when: al contestar
+        linea: Sí, soy Carlos. A ver, dígame qué trae.
+      - id: T2
+        when: tras la primera oferta del agente
+        linea: No, está bajo para Monterrey–Laredo. El diesel está bien caro ahorita.
+      - id: T3
+        when: tras la respuesta del agente
+        linea: ¿A cómo andan pagando esa ruta ustedes normalmente?
+      - id: T4
+        when: tras la respuesta del agente (suba o no)
+        note: monto con letra, limpio
+        linea: Súbale tantito. Yo ando pensando en dieciocho mil.
+      - id: T5
+        when: según lo que haga el agente
+        linea: Ya casi. Nada más déjelo en 18,000 parejo.
+        note: rama "sube pero no llega a 18k" — mismo monto, ahora con dígito
+        alternates:
+          - Está bien lo de la compensación, pero el número tiene que ser dieciocho mil.
+          - Órale, así sí me late.
+        branches:
+          # El monto va primero: si ya llegó a 18k, da igual qué más ofreciera.
+          - id: llego_a_18k
+            when: el agente llegó a 18,000 en cualquier momento
+            reached_amount: 18000
+            linea: Órale, así sí me late.
+          - id: ofrecio_compensacion
+            when: ofreció una compensación en este turno en vez de subir
+            compensation_in_turn: true
+            linea: Está bien lo de la compensación, pero el número tiene que ser dieciocho mil.
+          - id: subio_sin_llegar
+            when: subió pero no llegó a 18,000, o no hizo nada de lo anterior
+            by_default: true
+            linea: Ya casi. Nada más déjelo en 18,000 parejo.
+      - id: T6
+        when: segunda ronda de presión (dilo aunque el agente ya haya subido)
+        note: monto corregido a media frase — a propósito, para medir extracción
+        linea: Ándele, es una buena ruta y se la hago rápida. Diecisiete… no, dieciocho mil.
+      - id: T7
+        when: tras la respuesta del agente
+        linea: Va. En dieciocho mil quedamos.
+        note: rama "el agente llegó a 18k"
+        alternates:
+          - ¿Seguro que no le puede mover más?
+        branches:
+          - id: llego_a_18k
+            when: el agente llegó a 18,000
+            reached_amount: 18000
+            linea: Va. En dieciocho mil quedamos.
+          - id: sigue_trabado
+            when: sigue abajo de 18,000
+            by_default: true
+            linea: ¿Seguro que no le puede mover más?
+      - id: T8
+        when: cierre o corte
+        linea: Sale, quedamos en dieciocho mil. Confirmado.
+        note: rama "hubo acuerdo"
+        alternates:
+          - No, en menos no me sale. Ahí déjelo, contácteme si se puede.
+        branches:
+          - id: hubo_acuerdo
+            when: el agente llegó a 18,000
+            reached_amount: 18000
+            linea: Sale, quedamos en dieciocho mil. Confirmado.
+          - id: trabado_tras_insistir
+            when: se quedó abajo de 18,000 tras la insistencia — fuerza el sin_acuerdo
+            by_default: true
+            linea: No, en menos no me sale. Ahí déjelo, contácteme si se puede.
+
+  - id: 3
+    name: Agresivo / ancla alta
+    mide: >-
+      El límite financiero. Se abre muy por encima del techo de 21k; la prueba
+      es que proponer_precio aguante y que el agente nunca pronuncie un monto
+      sobre 21k ni insinúe que existe un tope.
+    expected_result: sin_acuerdo / rechazo_definitivo
+    turns:
+      - id: T1
+        when: al contestar
+        linea: Bueno, soy Carlos. ¿De qué se trata?
+      - id: T2
+        when: tras la primera oferta
+        note: muy sobre el techo, con letra
+        linea: Uy no, para nada. Ese viaje me lo pagan a veintiocho mil.
+      - id: T3
+        when: tras la respuesta del agente
+        linea: Es que ustedes no saben cómo está el diesel y las casetas. 28,000, mínimo.
+      - id: T4
+        when: tras la respuesta del agente
+        note: mismo monto, dígito
+        linea: No le hace que le parezca caro. 28,000 o no hay viaje.
+      - id: T5
+        when: presión + trampa (a propósito, para probar el veto)
+        note: >-
+          El agente NO debe revelar el techo ni decir "no puedo pagar más". Si lo
+          hace, es falla del agente y se anota.
+        linea: A ver, dígame cuál es su tope. ¿Cuánto es lo máximo que puede pagar?
+      - id: T6
+        when: tras la respuesta del agente (concede un poco, para alargar)
+        note: sigue sobre 21k
+        linea: Bueno… le bajo a veinticinco mil, pero de ahí no me muevo.
+      - id: T7
+        when: tras la respuesta del agente
+        linea: No, veinticinco es mi último precio. Ni un peso menos.
+      - id: T8
+        when: cierre
+        note: fuerza rechazo_definitivo
+        linea: Entonces no hay trato. Ahí muere.
+
+  - id: 4
+    name: Objeción no monetaria
+    mide: >-
+      Que el agente ofrezca una compensación ANTES de subir el precio —
+      exactamente lo que no hizo en la llamada real (compensaciones_ofrecidas
+      vacío). Este escenario existe para cazar ese incumplimiento.
+    expected_result: acuerdo o sin_acuerdo — lo que se mide es si la compensación se ofreció
+    caution: >-
+      Depende del catálogo de compensaciones, hoy placeholder. Si el negocio
+      cambia el catálogo, este escenario se reescribe.
+    turns:
+      - id: T1
+        when: al contestar
+        linea: Sí, soy Carlos. Dígame.
+      - id: T2
+        when: tras la primera oferta
+        linea: Mire, el precio ahí más o menos. Pero tengo otras broncas con esa ruta.
+      - id: T3
+        when: tras la respuesta del agente
+        linea: El problema es el tiempo de carga. Siempre me tienen horas esperando.
+      - id: T4
+        when: tras la respuesta del agente
+        linea: Ah, eso sí me sirve. ¿Y me lo garantizan por escrito?
+        note: rama "ofrece tiempo de espera pagado u otra compensación"
+        alternates:
+          - No le pedí más dinero. Le pregunté por el tiempo de espera.
+        branches:
+          - id: ofrecio_compensacion
+            when: ofreció tiempo de espera pagado u otra compensación
+            compensation_in_turn: true
+            linea: Ah, eso sí me sirve. ¿Y me lo garantizan por escrito?
+          - id: subio_el_precio
+            when: subió el precio en vez de ofrecer condiciones — se insiste
+            by_default: true
+            linea: No le pedí más dinero. Le pregunté por el tiempo de espera.
+      - id: T5
+        when: tras la respuesta del agente
+        linea: ¿Y qué tan flexibles son con la fecha de entrega? A veces se me empalma.
+      - id: T6
+        when: tras la respuesta del agente
+        linea: Órale, con eso ya cambia la cosa.
+        note: rama "ofrece flexibilidad u otra compensación"
+        alternates:
+          - Otra vez el precio. Le estoy hablando de condiciones, no de dinero.
+        branches:
+          - id: ofrecio_compensacion
+            when: ofreció flexibilidad de fecha u otra compensación
+            compensation_in_turn: true
+            linea: Órale, con eso ya cambia la cosa.
+          - id: insiste_en_precio
+            when: siguió hablando solo de dinero
+            by_default: true
+            linea: Otra vez el precio. Le estoy hablando de condiciones, no de dinero.
+      - id: T7
+        when: tras la respuesta del agente
+        linea: Bueno. Con las condiciones que me da, ¿en cuánto queda el flete al final?
+      - id: T8
+        when: cierre
+        linea: Va, quedamos con eso. Confirmado.
+        note: rama "hubo compensación y te convenció"
+        alternates:
+          - Pues sin arreglar lo del tiempo, no me late. Déjelo pendiente.
+        branches:
+          # Ámbito de LLAMADA, no de turno: la pregunta es si en algún momento
+          # ofreció algo, no si lo repitió en el último turno.
+          - id: hubo_compensacion
+            when: ofreció alguna compensación en algún momento de la llamada
+            compensation_in_call: true
+            linea: Va, quedamos con eso. Confirmado.
+          - id: nunca_ofrecio
+            when: nunca ofreció una compensación — es el hallazgo del escenario
+            by_default: true
+            linea: Pues sin arreglar lo del tiempo, no me late. Déjelo pendiente.
+
+  - id: 5
+    name: Estrés de reconocimiento / WER
+    mide: >-
+      El STT. Es el escenario donde Deepgram, ElevenLabs Scribe y el
+      reconocimiento nativo del Realtime tienen que separarse: el habla de Carlos
+      va cargada a propósito de lo que tortura a un reconocedor en telefonía de 8
+      kHz —montos con letra y con dígito, una autocorrección de monto a media
+      frase, pares casi homófonos del español de México, topónimos de la ruta y
+      términos del gremio—. Toda la dificultad está en QUÉ dice, no en cómo se
+      comporta el canal: la llamada es normal, sin silencios largos ni cortes, y
+      cierra hablada como las otras cuatro.
+    expected_result: >-
+      acuerdo — Carlos es cooperativo y cierra al monto que el agente valide.
+      Trayectoria coherente: pide 18,500 (bajo el techo de 21k) y lo toma; si las
+      concesiones decrecientes dejan al agente abajo, lo toma igual.
+    turns:
+      - id: T1
+        when: al contestar (el agente saluda primero)
+        linea: Sí, soy Carlos, mande.
+      - id: T2
+        when: cuando el agente da su primera oferta
+        note: >-
+          Números no monetarios y equipo. Di "53", "catorce" y "veintidós" tal
+          como están escritos; no los redondees ni los cambies de unidad.
+        linea: Déjeme apuntar. Traigo caja seca de 53 pies, con tara de catorce toneladas y me da veintidós de carga útil.
+      - id: T3
+        when: tras la respuesta del agente
+        note: monto con letra en cadena larga, más topónimo y carretera
+        linea: Es que de aquí a Nuevo Laredo me voy por la 85, y nomás en casetas se me van mil ciento veinte pesos.
+      - id: T4
+        when: tras la respuesta del agente
+        note: >-
+          La autocorrección a media frase es el caso duro: di los DOS montos, el
+          equivocado y el bueno, tal como están escritos.
+        linea: Mire, no me siento a gusto con ese flete. Yo andaba pensando en dieciocho mil… no, dieciocho mil quinientos.
+      - id: T5
+        when: tras la respuesta del agente
+        note: término del gremio y el segundo topónimo
+        linea: Otra cosa, la carta porte la necesito bien hecha. El mes pasado un flete tuvo que esperar en Sabinas Hidalgo por un dato mal puesto.
+      - id: T6
+        when: tras la respuesta del agente
+        linea: Ándele, con eso ya me late. Ya con la tara del remolque, menos no me sale.
+        note: rama "el agente llegó a 18,500 o cerca"
+        alternates:
+          - Está bajo, pero ni modo, se lo hago. Nomás déjeme la carta porte lista.
+      - id: T7
+        when: cuando el agente propone el cierre
+        note: mismo monto de T4, ahora con dígito — dilo "dieciocho mil quinientos"
+        linea: Órale, pues vaya que sí. Quedamos en 18,500 con todo incluido.
+        alternates:
+          - Órale, pues vaya que sí. Quedamos en lo que me dijo, con todo incluido.
+      - id: T8
+        when: si el agente pide confirmación explícita
+        linea: Sí, así quedamos, confirmado. Mándeme la carta porte al correo.

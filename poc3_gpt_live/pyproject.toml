@@ -1,0 +1,53 @@
+[project]
+name = "poc3-gpt-live"
+version = "0.1.0"
+description = "PoC3 — negotiating voice agent built on OpenAI's GPT Live API (alpha, gpt-live-1-boulder-alpha) over Twilio Media Streams"
+readme = "README.md"
+# 3.12, same as PoC1 and PoC2. No dependency requires it: it is pinned so that
+# the comparison does not change Python version between architectures.
+requires-python = ">=3.12"
+dependencies = [
+    # The PoC's server: the TwiML webhook and Twilio's Media Stream WebSocket.
+    # Same role as in PoC1 — the telephony layer is kept identical on purpose,
+    # so that the comparison measures the conversational engine and not the
+    # media bus.
+    "fastapi>=0.140.7",
+    "uvicorn[standard]>=0.51.0",
+    # Twilio SDK, only to place the outgoing call over REST. The audio does
+    # not go through here: that is the Media Stream.
+    "twilio>=9.10.9",
+    # WebSocket client towards wss://api.openai.com/v1/live.
+    #
+    # **The `openai` SDK is not used**: the alpha is a raw JSON event protocol,
+    # with its own header (`OpenAI-Alpha`) and a namespace the public SDK does
+    # not know. Speaking it by hand is less code than fighting a layer that
+    # does not support it, and it keeps the event contract in plain view —
+    # which is exactly what has to be auditable against `docs_alpha/`.
+    #
+    # It comes in with uvicorn[standard] anyway, but it is declared explicitly
+    # because `app/bridge.py` imports it directly (same criterion as fastapi).
+    "websockets>=15.0",
+    # The audio bridge: Twilio's 8 kHz μ-law <-> GPT-Live's 24 kHz PCM16.
+    #
+    # `soxr` does the resampling with an anti-aliasing filter. In PoC1 it comes
+    # for free with pipecat's `silero` extra; here it has to be declared,
+    # because PoC3 does not install pipecat. `numpy` is its input and output
+    # format.
+    "numpy>=2.1.0",
+    "soxr>=0.5.0",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.2",
+    "pyyaml>=6.0.3",
+]
+
+# What PoC1 and PoC2 need and PoC3 does NOT, which is in itself a result of the
+# comparison:
+#   deepgram / elevenlabs -> there is no discrete STT or TTS: the model is
+#                            full-duplex and has them built in
+#   silero / turn detector -> VAD and turn-taking are done by the server
+#   pipecat / livekit-agents -> there is no orchestration framework: the
+#                            "pipeline" is a bridge between two WebSockets
+#
+# That gap is the point of the architecture and has to be read both ways:
+# fewer pieces to integrate, and zero visibility into what happens inside
+# (see the reduced capture contract in `docs/METRICS_CONTRACT.md`).

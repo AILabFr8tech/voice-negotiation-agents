@@ -1,0 +1,48 @@
+# PLACEHOLDER — PENDING CONFIRMATION WITH THE BUSINESS.
+#
+# The three records below are the illustrative examples from CLAUDE.md, not
+# the real catalog of compensations Spots can offer. Do not use in a real
+# call until the business confirms the final list.
+#
+# Contract (single source of truth):
+#   - `id`         : the only valid value of `tipo` in
+#                    ofrecer_compensacion_no_monetaria(tipo). Format
+#                    snake_case: ^[a-z][a-z0-9_]*$
+#   - `descripcion`: prose the agent reads aloud; feeds the
+#                    {COMPENSACIONES_DISPONIBLES} placeholder of the system
+#                    prompt. It must sound natural when synthesized as audio.
+#   - `recognized_by` (optional): phrases by which the harness recognizes this
+#                    compensation when the agent says it PARAPHRASED. It is not
+#                    a contract with the LLM: it is the ear of the automatic
+#                    actor that decides the branches of scenario 4. If missing,
+#                    scenario 4 cannot be acted out and the harness says so by name.
+#
+# This way the prompt and the function cannot get out of sync: both come from here.
+#
+# About the phrases: they are chosen NOT to give false positives, even at the
+# cost of recall. The agent is answering a Carlos who asks about the
+# conditions, so "fecha de entrega" (delivery date) also comes out of its mouth
+# when it is DENYING it; that is why phrases that only appear in an offer
+# ("día adicional", additional day) are preferred over those that appear in any
+# mention of the topic.
+
+- id: tiempo_espera_carga
+  descripcion: "hasta 2 horas de tiempo de espera pagado en carga o descarga"
+  recognized_by:
+    - tiempo de espera
+    - espera pagado
+    - espera pagada
+    - horas de espera
+- id: prioridad_proxima_ruta
+  descripcion: "prioridad para la siguiente ruta disponible en la zona"
+  recognized_by:
+    - prioridad
+    - siguiente ruta
+    - proxima ruta
+- id: flexibilidad_fecha_entrega
+  descripcion: "un día adicional de flexibilidad en la fecha de entrega"
+  recognized_by:
+    - dia adicional
+    - dia mas de flexibilidad
+    - flexibilidad en la fecha
+    - flexibilidad en la entrega

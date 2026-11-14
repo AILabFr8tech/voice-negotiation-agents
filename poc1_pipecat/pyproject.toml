@@ -1,0 +1,30 @@
+[project]
+name = "poc1-pipecat"
+version = "0.1.0"
+description = "PoC1 — negotiating voice agent built with Pipecat (Deepgram vs. ElevenLabs Scribe bake-off + ElevenLabs Flash + Twilio Media Streams)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # PoC server: outbound-call endpoint, TwiML webhook and the Media Stream
+    # WebSocket. `fastapi` already comes with pipecat's `websocket` extra, but
+    # it is declared explicitly because this code imports it.
+    "fastapi>=0.140.7",
+    "uvicorn[standard]>=0.51.0",
+    # Twilio SDK, used only to place the outbound call over REST. Audio does
+    # not go through here: that is the Media Stream.
+    "twilio>=9.10.9",
+    # pipecat-ai 1.6.0 extras:
+    #   websocket -> Twilio Media Streams transport. There is NO `twilio`
+    #                extra; TwilioFrameSerializer already ships in the core.
+    #   silero    -> VAD for end-of-turn detection. Brings onnxruntime, numpy
+    #                and soxr, which is everything the LocalSmartTurnAnalyzerV3
+    #                analyzer needs on top of the VAD (the
+    #                smart-turn-v3.2-cpu.onnx model is bundled). That is why the
+    #                `local-smart-turn` extra is not added: it is for the
+    #                v2/CoreML analyzers and pulls in torch, torchaudio and
+    #                coremltools, which has no Windows support.
+    "pipecat-ai[deepgram,elevenlabs,openai,silero,websocket]>=1.6.0",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.2",
+    "pyyaml>=6.0.3",
+]

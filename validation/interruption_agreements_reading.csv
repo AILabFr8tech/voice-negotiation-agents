@@ -1,0 +1,46 @@
+clave,kind,note
+0001-poc1-e1-r1,acepto,"tras ""Perfecto. Quedamos así, entonces."""
+0004-poc1-e2-r1,apoyo,"pidió 18,000 (""Diecisiete… no, dieciocho mil""); el agente empezó a ofrecer 16,500, sonó ""Ok."" y registró 16,500"
+0007-poc1-e3-r1,sin_acuerdo,
+0010-poc1-e4-r1,apoyo,"preguntó ""¿en cuánto queda el flete al final?""; el agente dijo 17,500, sonó ""Sí, sí"" y registró"
+0013-poc1-e5-r1,acepto,"tras ""Sí, así quedamos. Confirmado."" (el agente se quedó en 16,000)"
+0016-poc1-e1-r2,apoyo,"antes dijo ""Si me lo deja parejo, lo tomo""; el agente ofreció 18,000, sonó ""Ándele."" y registró"
+0019-poc1-e2-r2,sin_acuerdo,
+0022-poc1-e3-r2,linea_incompleta,"el reconocedor transcribió ""Entonces, trato. Ahí muere."" por ""Entonces no hay trato. Ahí muere."""
+0025-poc1-e4-r2,acepto,"tras ""Va, quedamos con eso. Confirmado."""
+0028-poc1-e5-r2,acepto,"tras ""Sí, así quedamos. Confirmado."""
+0031-poc1-e1-r3,acepto,"tras ""Perfecto. Quedamos así, entonces."""
+0034-poc1-e2-r3,acepto,"tras ""Órale, así sí me late."""
+0037-poc1-e3-r3,sin_acuerdo,
+0040-poc1-e4-r3,anticipado,"tras ""Órale, con eso ya cambia la cosa."", antes de que preguntara el monto final y confirmara"
+0043-poc1-e5-r3,acepto,"tras ""Ándele, con eso ya me late."""
+0002-poc2-e1-r1,acepto,"tras ""Perfecto. Quedamos así, entonces."""
+0005-poc2-e2-r1,linea_incompleta,"la transcripción terminó en ""Diecisiete, no,"" y perdió ""dieciocho mil""; registró 16,500"
+0008-poc2-e3-r1,linea_incompleta,"el fin de turno partió ""Bueno… le bajo a veinticinco mil, pero de ahí no me muevo"" en ""Bueno,""; registró 16,800"
+0011-poc2-e4-r1,anticipado,"tras ""Órale, con eso ya cambia la cosa.""; antes, tras un ""Ándele."" encimado, dijo ""Quedamos en 17,000"" sin registrarlo"
+0014-poc2-e5-r1,acepto,"tras ""Ándele, con eso ya me late."""
+0017-poc2-e1-r2,apoyo,"antes dijo ""Si me lo deja parejo, lo tomo""; el agente empezó a ofrecer 17,000, sonó ""Ándele."" y registró"
+0020-poc2-e2-r2,apoyo,"pidió 18,000 (""el número tiene que ser dieciocho mil""); el agente empezó a ofrecer 17,000, sonó ""Sí, sí"" y registró"
+0023-poc2-e3-r2,linea_incompleta,"el fin de turno partió ""Bueno… le bajo a veinticinco mil, pero de ahí no me muevo"" en ""Bueno,""; registró 17,500"
+0026-poc2-e4-r2,acepto,"tras ""Va, quedamos con eso. Confirmado."""
+0029-poc2-e5-r2,acepto,"tras ""Ándele, con eso ya me late."""
+0032-poc2-e1-r3,acepto,"tras ""Perfecto. Quedamos así, entonces."""
+0035-poc2-e2-r3,sin_acuerdo,
+0038-poc2-e3-r3,sin_acuerdo,
+0041-poc2-e4-r3,anticipado,"tras ""Órale, con eso ya cambia la cosa."", antes de que preguntara el monto final y confirmara"
+0044-poc2-e5-r3,acepto,"tras ""Ándele, con eso ya me late."""
+0001-poc3-e1-r1,acepto,"tras ""Perfecto. Quedamos así, entonces."""
+0002-poc3-e2-r1,sin_acuerdo,
+0003-poc3-e3-r1,sin_acuerdo,
+0004-poc3-e4-r1,acepto,"tras ""Va, quedamos con eso. Confirmado."""
+0005-poc3-e5-r1,acepto,"tras ""Sí, así quedamos. Confirmado."""
+0006-poc3-e1-r2,acepto,"tras ""Perfecto. Quedamos así, entonces.""; antes, tras ""Si me lo deja parejo, lo tomo"", dijo ""quedamos en dieciséis quinientos"" sin registrarlo (no lo provocó el apoyo: ya lo estaba diciendo)"
+0007-poc3-e2-r2,sin_acuerdo,"cerró sin acuerdo aunque el transportista confirmó 18,000 después de la interrupción ""así no me sale"""
+0008-poc3-e3-r2,sin_acuerdo,
+0009-poc3-e4-r2,acepto,"tras ""Va, quedamos con eso. Confirmado."""
+0010-poc3-e5-r2,acepto,"tras ""Ándele, con eso ya me late."""
+0011-poc3-e1-r3,anticipado,"tras ""Si me lo deja parejo, lo tomo"" registró 18,000, antes de ""Perfecto. Quedamos así, entonces."""
+0012-poc3-e2-r3,acepto,"tras ""Órale, así sí me late."""
+0013-poc3-e3-r3,sin_acuerdo,
+0014-poc3-e4-r3,acepto,"tras ""Va, quedamos con eso. Confirmado."""
+0015-poc3-e5-r3,acepto,"tras ""Sí, así quedamos. Confirmado."""

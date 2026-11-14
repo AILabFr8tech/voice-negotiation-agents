@@ -1,0 +1,18 @@
+{
+  "title": "Voice Negotiation Agents: Pipecat, LiveKit and GPT-Live negotiating freight rates in Spanish",
+  "upload_type": "software",
+  "description": "<p>Code and data for an externally measured comparison of three voice-agent architectures that negotiate freight rates by phone in Mexican Spanish: two cascades orchestrated by Pipecat and by LiveKit Agents, and OpenAI's GPT-Live speech model. Includes the three agents, the shared negotiation engine, prompt and tools, the measurement harness and the simulated agents that validate it, the exported per-call and per-turn tables, and the scripts that regenerate every number in the paper.</p><p>Accompanying paper: <em>Latency, Speech Recognition and Turn-Taking in Voice Agents for Spanish Phone Negotiation: An Externally Measured Comparison of Pipecat, LiveKit and GPT-Live</em>.</p>",
+  "creators": [
+    {"name": "Popoca Moran, Jovan", "affiliation": "AI Lab, Freight Technologies Inc."},
+    {"name": "de Avila-Armenta, Eduardo", "affiliation": "AI Lab, Freight Technologies Inc.; Tecnológico de Monterrey, School of Engineering and Sciences", "orcid": "0000-0003-3461-7722"},
+    {"name": "Aquino-Ibarra, Raúl Alejandro", "affiliation": "AI Lab, Freight Technologies Inc."},
+    {"name": "Nicolás-Díaz, Jorge Octavio", "affiliation": "AI Lab, Freight Technologies Inc."},
+    {"name": "Leon-Dominguez, Umberto", "affiliation": "AI Lab, Freight Technologies Inc.; School of Psychology, University of Monterrey", "orcid": "0000-0001-5170-2553"}
+  ],
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "keywords": ["voice agents", "speech-to-speech models", "response latency", "turn-taking", "backchannels", "speech recognition", "Spanish"],
+  "related_identifiers": [
+    {"identifier": "https://github.com/AILabFr8tech/voice-negotiation-agents", "relation": "isSupplementTo", "scheme": "url"}
+  ]
+}

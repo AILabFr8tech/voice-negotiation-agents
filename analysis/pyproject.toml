@@ -1,0 +1,15 @@
+[project]
+name = "analysis-report"
+version = "0.1.0"
+description = "Entorno fijo del análisis: las versiones con que se calcularon las cifras del reporte y del artículo"
+# 3.12, igual que las tres PoC.
+requires-python = ">=3.12"
+dependencies = [
+    # Versiones exactas con que corrió el análisis publicado. El reporte las cita
+    # (\RAnalisisNumpy, \RAnalisisScipy) y el percentil, el bootstrap y las
+    # pruebas de rangos dependen de ellas: cambiarlas es volver a calcular.
+    "numpy==2.5.2",
+    "scipy==1.18.1",
+    "pyyaml==6.0.3",
+    "pytest>=9.1.1",
+]

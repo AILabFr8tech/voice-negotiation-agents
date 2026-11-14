@@ -1,0 +1,299 @@
+campana,indice,clave,poc,scenario,repetition,estado,in_the_pool,failed_criteria,clips_not_played,stt_missed_some_clip,insufficient_turns,turn_without_response,response_without_audio,failed_poc3_reviews,reconstruction_adds_up,batch_reason,end
+campana200,1,0001-poc1-e1-r1,1,1,1,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,2,0002-poc2-e1-r1,2,1,1,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,3,0003-poc1-e2-r1,1,2,1,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,4,0004-poc2-e2-r1,2,2,1,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,5,0005-poc1-e3-r1,1,3,1,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,6,0006-poc2-e3-r1,2,3,1,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,7,0007-poc1-e4-r1,1,4,1,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,8,0008-poc2-e4-r1,2,4,1,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,9,0009-poc1-e5-r1,1,5,1,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,10,0010-poc2-e5-r1,2,5,1,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,11,0011-poc1-e1-r2,1,1,2,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,12,0012-poc2-e1-r2,2,1,2,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,13,0013-poc1-e2-r2,1,2,2,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,14,0014-poc2-e2-r2,2,2,2,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,15,0015-poc1-e3-r2,1,3,2,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,16,0016-poc2-e3-r2,2,3,2,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,17,0017-poc1-e4-r2,1,4,2,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,18,0018-poc2-e4-r2,2,4,2,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,19,0019-poc1-e5-r2,1,5,2,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,20,0020-poc2-e5-r2,2,5,2,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,21,0021-poc1-e1-r3,1,1,3,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,22,0022-poc2-e1-r3,2,1,3,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,23,0023-poc1-e2-r3,1,2,3,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,24,0024-poc2-e2-r3,2,2,3,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,25,0025-poc1-e3-r3,1,3,3,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,26,0026-poc2-e3-r3,2,3,3,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,27,0027-poc1-e4-r3,1,4,3,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,28,0028-poc2-e4-r3,2,4,3,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,29,0029-poc1-e5-r3,1,5,3,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,30,0030-poc2-e5-r3,2,5,3,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,31,0031-poc1-e1-r4,1,1,4,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,32,0032-poc2-e1-r4,2,1,4,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,33,0033-poc1-e2-r4,1,2,4,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,34,0034-poc2-e2-r4,2,2,4,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,35,0035-poc1-e3-r4,1,3,4,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,36,0036-poc2-e3-r4,2,3,4,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,37,0037-poc1-e4-r4,1,4,4,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,38,0038-poc2-e4-r4,2,4,4,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,39,0039-poc1-e5-r4,1,5,4,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,40,0040-poc2-e5-r4,2,5,4,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,41,0041-poc1-e1-r5,1,1,5,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,42,0042-poc2-e1-r5,2,1,5,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,43,0043-poc1-e2-r5,1,2,5,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,44,0044-poc2-e2-r5,2,2,5,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,45,0045-poc1-e3-r5,1,3,5,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,46,0046-poc2-e3-r5,2,3,5,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,47,0047-poc1-e4-r5,1,4,5,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,48,0048-poc2-e4-r5,2,4,5,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,49,0049-poc1-e5-r5,1,5,5,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,50,0050-poc2-e5-r5,2,5,5,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,51,0051-poc1-e1-r6,1,1,6,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,52,0052-poc2-e1-r6,2,1,6,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,53,0053-poc1-e2-r6,1,2,6,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,54,0054-poc2-e2-r6,2,2,6,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,55,0055-poc1-e3-r6,1,3,6,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,56,0056-poc2-e3-r6,2,3,6,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,57,0057-poc1-e4-r6,1,4,6,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,58,0058-poc2-e4-r6,2,4,6,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,59,0059-poc1-e5-r6,1,5,6,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,60,0060-poc2-e5-r6,2,5,6,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,61,0061-poc1-e1-r7,1,1,7,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,62,0062-poc2-e1-r7,2,1,7,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,63,0063-poc1-e2-r7,1,2,7,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,64,0064-poc2-e2-r7,2,2,7,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,65,0065-poc1-e3-r7,1,3,7,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,66,0066-poc2-e3-r7,2,3,7,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,67,0067-poc1-e4-r7,1,4,7,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,68,0068-poc2-e4-r7,2,4,7,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,69,0069-poc1-e5-r7,1,5,7,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,70,0070-poc2-e5-r7,2,5,7,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,71,0071-poc1-e1-r8,1,1,8,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,72,0072-poc2-e1-r8,2,1,8,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,73,0073-poc1-e2-r8,1,2,8,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,74,0074-poc2-e2-r8,2,2,8,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,75,0075-poc1-e3-r8,1,3,8,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,76,0076-poc2-e3-r8,2,3,8,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,77,0077-poc1-e4-r8,1,4,8,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,78,0078-poc2-e4-r8,2,4,8,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,79,0079-poc1-e5-r8,1,5,8,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,80,0080-poc2-e5-r8,2,5,8,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,81,0081-poc1-e1-r9,1,1,9,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,82,0082-poc2-e1-r9,2,1,9,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,83,0083-poc1-e2-r9,1,2,9,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,84,0084-poc2-e2-r9,2,2,9,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,85,0085-poc1-e3-r9,1,3,9,roja,0,1,0,0,1,0,0,,1,"el agente cerró la negociación y borró la sala en T3 (la lectura del WebSocket terminó: ConnectionClosedError(None, None, None)); con 2 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla",cerrada_por_agente
+campana200,86,0086-poc2-e3-r9,2,3,9,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,87,0087-poc1-e4-r9,1,4,9,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,88,0088-poc2-e4-r9,2,4,9,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,89,0089-poc1-e5-r9,1,5,9,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,90,0090-poc2-e5-r9,2,5,9,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,91,0091-poc1-e1-r10,1,1,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,92,0092-poc2-e1-r10,2,1,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,93,0093-poc1-e2-r10,1,2,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,94,0094-poc2-e2-r10,2,2,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,95,0095-poc1-e3-r10,1,3,10,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,96,0096-poc2-e3-r10,2,3,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,97,0097-poc1-e4-r10,1,4,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,98,0098-poc2-e4-r10,2,4,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,99,0099-poc1-e5-r10,1,5,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,100,0100-poc2-e5-r10,2,5,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,101,0101-poc1-e1-r11,1,1,11,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,102,0102-poc2-e1-r11,2,1,11,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,103,0103-poc1-e2-r11,1,2,11,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,104,0104-poc2-e2-r11,2,2,11,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,105,0105-poc1-e3-r11,1,3,11,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,106,0106-poc2-e3-r11,2,3,11,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,107,0107-poc1-e4-r11,1,4,11,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,108,0108-poc2-e4-r11,2,4,11,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,109,0109-poc1-e5-r11,1,5,11,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,110,0110-poc2-e5-r11,2,5,11,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,111,0111-poc1-e1-r12,1,1,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,112,0112-poc2-e1-r12,2,1,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,113,0113-poc1-e2-r12,1,2,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,114,0114-poc2-e2-r12,2,2,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,115,0115-poc1-e3-r12,1,3,12,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,116,0116-poc2-e3-r12,2,3,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,117,0117-poc1-e4-r12,1,4,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,118,0118-poc2-e4-r12,2,4,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,119,0119-poc1-e5-r12,1,5,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,120,0120-poc2-e5-r12,2,5,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,121,0121-poc1-e1-r13,1,1,13,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,122,0122-poc2-e1-r13,2,1,13,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,123,0123-poc1-e2-r13,1,2,13,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,124,0124-poc2-e2-r13,2,2,13,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,125,0125-poc1-e3-r13,1,3,13,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,126,0126-poc2-e3-r13,2,3,13,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,127,0127-poc1-e4-r13,1,4,13,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,128,0128-poc2-e4-r13,2,4,13,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,129,0129-poc1-e5-r13,1,5,13,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,130,0130-poc2-e5-r13,2,5,13,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,131,0131-poc1-e1-r14,1,1,14,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,132,0132-poc2-e1-r14,2,1,14,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,133,0133-poc1-e2-r14,1,2,14,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,134,0134-poc2-e2-r14,2,2,14,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,135,0135-poc1-e3-r14,1,3,14,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,136,0136-poc2-e3-r14,2,3,14,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,137,0137-poc1-e4-r14,1,4,14,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,138,0138-poc2-e4-r14,2,4,14,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,139,0139-poc1-e5-r14,1,5,14,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,140,0140-poc2-e5-r14,2,5,14,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,141,0141-poc1-e1-r15,1,1,15,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,142,0142-poc2-e1-r15,2,1,15,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,143,0143-poc1-e2-r15,1,2,15,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,144,0144-poc2-e2-r15,2,2,15,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,145,0145-poc1-e3-r15,1,3,15,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,146,0146-poc2-e3-r15,2,3,15,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,147,0147-poc1-e4-r15,1,4,15,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,148,0148-poc2-e4-r15,2,4,15,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,149,0149-poc1-e5-r15,1,5,15,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,150,0150-poc2-e5-r15,2,5,15,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,151,0151-poc1-e1-r16,1,1,16,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,152,0152-poc2-e1-r16,2,1,16,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,153,0153-poc1-e2-r16,1,2,16,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,154,0154-poc2-e2-r16,2,2,16,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,155,0155-poc1-e3-r16,1,3,16,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,156,0156-poc2-e3-r16,2,3,16,roja,0,2,0,0,1,0,1,,1,"el agente cerró la negociación y borró la sala en el último turno (5); 2 turno(s) con texto y sin audio (T3, T6): fuera del percentil, a confiabilidad; con 4 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla",cerrada_por_agente
+campana200,157,0157-poc1-e4-r16,1,4,16,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,158,0158-poc2-e4-r16,2,4,16,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,159,0159-poc1-e5-r16,1,5,16,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,160,0160-poc2-e5-r16,2,5,16,roja,0,1,0,0,0,0,1,,1,"el agente cerró la negociación y borró la sala en el último turno (5); 1 turno(s) con texto y sin audio (T6): fuera del percentil, a confiabilidad",cerrada_por_agente
+campana200,161,0161-poc1-e1-r17,1,1,17,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,162,0162-poc2-e1-r17,2,1,17,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,163,0163-poc1-e2-r17,1,2,17,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,164,0164-poc2-e2-r17,2,2,17,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,165,0165-poc1-e3-r17,1,3,17,roja,0,1,0,0,1,0,0,,1,"el agente cerró la negociación y borró la sala en T3 (la lectura del WebSocket terminó: ConnectionClosedError(None, None, None)); con 2 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla",cerrada_por_agente
+campana200,166,0166-poc2-e3-r17,2,3,17,roja,0,1,0,0,0,0,1,,1,"el agente cerró la negociación y borró la sala en el último turno (5); 1 turno(s) con texto y sin audio (T6): fuera del percentil, a confiabilidad",cerrada_por_agente
+campana200,167,0167-poc1-e4-r17,1,4,17,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,168,0168-poc2-e4-r17,2,4,17,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,169,0169-poc1-e5-r17,1,5,17,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,170,0170-poc2-e5-r17,2,5,17,roja,0,1,0,0,0,0,1,,1,"el agente cerró la negociación y borró la sala en el último turno (5); 1 turno(s) con texto y sin audio (T6): fuera del percentil, a confiabilidad",cerrada_por_agente
+campana200,171,0171-poc1-e1-r18,1,1,18,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,172,0172-poc2-e1-r18,2,1,18,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,173,0173-poc1-e2-r18,1,2,18,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,174,0174-poc2-e2-r18,2,2,18,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,175,0175-poc1-e3-r18,1,3,18,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,176,0176-poc2-e3-r18,2,3,18,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,177,0177-poc1-e4-r18,1,4,18,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana200,178,0178-poc2-e4-r18,2,4,18,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,179,0179-poc1-e5-r18,1,5,18,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana200,180,0180-poc2-e5-r18,2,5,18,roja,0,4,1,1,1,1,0,,1,el agente cerró la negociación y borró la sala en T1 (1); con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,cerrada_por_agente
+campana200,181,0181-poc1-e1-r19,1,1,19,roja,0,2,0,0,1,0,1,,1,el agente generó texto pero no salió una sola trama con voz en toda la llamada: el TTS no sonó. La transcripción del worker se ve completa y la llamada no lo está,agente_sin_audio
+campana200,182,0182-poc2-e1-r19,2,1,19,roja,0,4,1,1,1,1,0,,1,el agente no contestó: venció el tope de seguridad; con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,vencimiento_de_la_espera
+campana200,183,0183-poc1-e2-r19,1,2,19,roja,0,2,0,0,1,0,1,,1,el agente generó texto pero no salió una sola trama con voz en toda la llamada: el TTS no sonó. La transcripción del worker se ve completa y la llamada no lo está,agente_sin_audio
+campana200,184,0184-poc2-e2-r19,2,2,19,roja,0,4,1,1,1,1,0,,1,el agente no contestó: venció el tope de seguridad; con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,vencimiento_de_la_espera
+campana200,185,0185-poc1-e3-r19,1,3,19,roja,0,2,0,0,1,0,1,,1,el agente generó texto pero no salió una sola trama con voz en toda la llamada: el TTS no sonó. La transcripción del worker se ve completa y la llamada no lo está,agente_sin_audio
+campana200,186,0186-poc2-e3-r19,2,3,19,roja,0,4,1,1,1,1,0,,1,el agente cerró la negociación y borró la sala en T1 (1); con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,cerrada_por_agente
+campana200,187,0187-poc1-e4-r19,1,4,19,roja,0,2,0,0,1,0,1,,1,el agente generó texto pero no salió una sola trama con voz en toda la llamada: el TTS no sonó. La transcripción del worker se ve completa y la llamada no lo está,agente_sin_audio
+campana200,188,0188-poc2-e4-r19,2,4,19,roja,0,4,1,1,1,1,0,,1,el agente cerró la negociación y borró la sala en T1 (1); con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,cerrada_por_agente
+campana200,189,0189-poc1-e5-r19,1,5,19,roja,0,2,0,0,1,0,1,,1,el agente generó texto pero no salió una sola trama con voz en toda la llamada: el TTS no sonó. La transcripción del worker se ve completa y la llamada no lo está,agente_sin_audio
+campana200,190,0190-poc2-e5-r19,2,5,19,roja,0,4,1,1,1,1,0,,1,el agente no contestó: venció el tope de seguridad; con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,vencimiento_de_la_espera
+campana200,191,0191-poc1-e1-r20,1,1,20,roja,0,2,0,0,1,0,1,,1,el agente generó texto pero no salió una sola trama con voz en toda la llamada: el TTS no sonó. La transcripción del worker se ve completa y la llamada no lo está,agente_sin_audio
+campana200,192,0192-poc2-e1-r20,2,1,20,roja,0,4,1,1,1,1,0,,1,el agente no contestó: venció el tope de seguridad; con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,vencimiento_de_la_espera
+campana200,193,0193-poc1-e2-r20,1,2,20,roja,0,2,0,0,1,0,1,,1,el agente generó texto pero no salió una sola trama con voz en toda la llamada: el TTS no sonó. La transcripción del worker se ve completa y la llamada no lo está,agente_sin_audio
+campana200,194,0194-poc2-e2-r20,2,2,20,roja,0,4,1,1,1,1,0,,1,el agente cerró la negociación y borró la sala en T1 (1); con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,cerrada_por_agente
+campana200,195,0195-poc1-e3-r20,1,3,20,roja,0,2,0,0,1,0,1,,1,el agente generó texto pero no salió una sola trama con voz en toda la llamada: el TTS no sonó. La transcripción del worker se ve completa y la llamada no lo está,agente_sin_audio
+campana200,196,0196-poc2-e3-r20,2,3,20,roja,0,4,1,1,1,1,0,,1,el agente cerró la negociación y borró la sala en T1 (1); con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,cerrada_por_agente
+campana200,197,0197-poc1-e4-r20,1,4,20,roja,0,2,0,0,1,0,1,,1,el agente generó texto pero no salió una sola trama con voz en toda la llamada: el TTS no sonó. La transcripción del worker se ve completa y la llamada no lo está,agente_sin_audio
+campana200,198,0198-poc2-e4-r20,2,4,20,roja,0,4,1,1,1,1,0,,1,el agente cerró la negociación y borró la sala en T1 (1); con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,cerrada_por_agente
+campana200,199,0199-poc1-e5-r20,1,5,20,roja,0,2,0,0,1,0,1,,1,el agente generó texto pero no salió una sola trama con voz en toda la llamada: el TTS no sonó. La transcripción del worker se ve completa y la llamada no lo está,agente_sin_audio
+campana200,200,0200-poc2-e5-r20,2,5,20,roja,0,4,1,1,1,1,0,,1,el agente cerró la negociación y borró la sala en T1 (1); con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,cerrada_por_agente
+campana_poc3_pcmu,1,0001-poc3-e1-r1,3,1,1,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,2,0002-poc3-e2-r1,3,2,1,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,3,0003-poc3-e3-r1,3,3,1,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,4,0004-poc3-e4-r1,3,4,1,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,5,0005-poc3-e5-r1,3,5,1,roja,0,1,0,0,1,0,0,,1,el agente cerró la negociación y borró la sala en T2 (el puente cerró el Media Stream); con 1 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,cerrada_por_agente
+campana_poc3_pcmu,6,0006-poc3-e1-r2,3,1,2,roja,0,1,0,0,1,0,0,,1,el agente no contestó: venció el tope de seguridad; con 1 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,vencimiento_de_la_espera
+campana_poc3_pcmu,7,0007-poc3-e2-r2,3,2,2,ok,1,0,0,0,0,0,0,,1,vencimiento_de_la_espera,vencimiento_de_la_espera
+campana_poc3_pcmu,8,0008-poc3-e3-r2,3,3,2,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,9,0009-poc3-e4-r2,3,4,2,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,10,0010-poc3-e5-r2,3,5,2,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,11,0011-poc3-e1-r3,3,1,3,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,12,0012-poc3-e2-r3,3,2,3,ok,1,0,0,0,0,0,0,,1,vencimiento_de_la_espera,vencimiento_de_la_espera
+campana_poc3_pcmu,13,0013-poc3-e3-r3,3,3,3,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,14,0014-poc3-e4-r3,3,4,3,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,15,0015-poc3-e5-r3,3,5,3,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,16,0016-poc3-e1-r4,3,1,4,roja,0,4,1,1,1,1,0,,1,el agente cerró la negociación y borró la sala en T1 (el puente cerró el Media Stream); con 0 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,cerrada_por_agente
+campana_poc3_pcmu,17,0017-poc3-e2-r4,3,2,4,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,18,0018-poc3-e3-r4,3,3,4,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,19,0019-poc3-e4-r4,3,4,4,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,20,0020-poc3-e5-r4,3,5,4,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,21,0021-poc3-e1-r5,3,1,5,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,22,0022-poc3-e2-r5,3,2,5,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,23,0023-poc3-e3-r5,3,3,5,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,24,0024-poc3-e4-r5,3,4,5,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,25,0025-poc3-e5-r5,3,5,5,ok,1,0,0,0,0,1,0,,0,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,26,0026-poc3-e1-r6,3,1,6,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,27,0027-poc3-e2-r6,3,2,6,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,28,0028-poc3-e3-r6,3,3,6,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,29,0029-poc3-e4-r6,3,4,6,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,30,0030-poc3-e5-r6,3,5,6,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,31,0031-poc3-e1-r7,3,1,7,roja,0,1,0,0,0,0,1,,1,"el agente cerró la negociación y borró la sala en el último turno (el puente cerró el Media Stream); 1 turno(s) con texto y sin audio (T7): fuera del percentil, a confiabilidad",cerrada_por_agente
+campana_poc3_pcmu,32,0032-poc3-e2-r7,3,2,7,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,33,0033-poc3-e3-r7,3,3,7,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,34,0034-poc3-e4-r7,3,4,7,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,35,0035-poc3-e5-r7,3,5,7,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,36,0036-poc3-e1-r8,3,1,8,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,37,0037-poc3-e2-r8,3,2,8,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,38,0038-poc3-e3-r8,3,3,8,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,39,0039-poc3-e4-r8,3,4,8,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,40,0040-poc3-e5-r8,3,5,8,roja,0,1,0,0,0,0,1,,1,"el guion se actuó completo; 1 turno(s) con texto y sin audio (T2): fuera del percentil, a confiabilidad",guion_completo
+campana_poc3_pcmu,41,0041-poc3-e1-r9,3,1,9,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,42,0042-poc3-e2-r9,3,2,9,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,43,0043-poc3-e3-r9,3,3,9,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,44,0044-poc3-e4-r9,3,4,9,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,45,0045-poc3-e5-r9,3,5,9,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,46,0046-poc3-e1-r10,3,1,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,47,0047-poc3-e2-r10,3,2,10,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,48,0048-poc3-e3-r10,3,3,10,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,49,0049-poc3-e4-r10,3,4,10,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,50,0050-poc3-e5-r10,3,5,10,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,51,0051-poc3-e1-r11,3,1,11,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,52,0052-poc3-e2-r11,3,2,11,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,53,0053-poc3-e3-r11,3,3,11,ok,1,0,0,0,0,0,0,,1,vencimiento_de_la_espera,vencimiento_de_la_espera
+campana_poc3_pcmu,54,0054-poc3-e4-r11,3,4,11,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,55,0055-poc3-e5-r11,3,5,11,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,56,0056-poc3-e1-r12,3,1,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,57,0057-poc3-e2-r12,3,2,12,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,58,0058-poc3-e3-r12,3,3,12,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,59,0059-poc3-e4-r12,3,4,12,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,60,0060-poc3-e5-r12,3,5,12,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,61,0061-poc3-e1-r13,3,1,13,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,62,0062-poc3-e2-r13,3,2,13,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,63,0063-poc3-e3-r13,3,3,13,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,64,0064-poc3-e4-r13,3,4,13,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,65,0065-poc3-e5-r13,3,5,13,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,66,0066-poc3-e1-r14,3,1,14,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,67,0067-poc3-e2-r14,3,2,14,ok,1,0,0,0,0,0,0,,1,vencimiento_de_la_espera,vencimiento_de_la_espera
+campana_poc3_pcmu,68,0068-poc3-e3-r14,3,3,14,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,69,0069-poc3-e4-r14,3,4,14,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,70,0070-poc3-e5-r14,3,5,14,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,71,0071-poc3-e1-r15,3,1,15,roja,0,1,0,0,0,0,1,,1,"el agente cerró la negociación y borró la sala en el último turno (el puente cerró el Media Stream); 1 turno(s) con texto y sin audio (T8): fuera del percentil, a confiabilidad",cerrada_por_agente
+campana_poc3_pcmu,72,0072-poc3-e2-r15,3,2,15,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,73,0073-poc3-e3-r15,3,3,15,roja,0,1,0,0,0,0,1,,1,"el guion se actuó completo; 1 turno(s) con texto y sin audio (T6): fuera del percentil, a confiabilidad",guion_completo
+campana_poc3_pcmu,74,0074-poc3-e4-r15,3,4,15,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,75,0075-poc3-e5-r15,3,5,15,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,76,0076-poc3-e1-r16,3,1,16,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,77,0077-poc3-e2-r16,3,2,16,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,78,0078-poc3-e3-r16,3,3,16,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,79,0079-poc3-e4-r16,3,4,16,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,80,0080-poc3-e5-r16,3,5,16,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,81,0081-poc3-e1-r17,3,1,17,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,82,0082-poc3-e2-r17,3,2,17,ok,1,0,0,0,0,0,0,,1,vencimiento_de_la_espera,vencimiento_de_la_espera
+campana_poc3_pcmu,83,0083-poc3-e3-r17,3,3,17,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,84,0084-poc3-e4-r17,3,4,17,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,85,0085-poc3-e5-r17,3,5,17,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,86,0086-poc3-e1-r18,3,1,18,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,87,0087-poc3-e2-r18,3,2,18,ok,1,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu,88,0088-poc3-e3-r18,3,3,18,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,89,0089-poc3-e4-r18,3,4,18,ok,1,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu,90,0090-poc3-e5-r18,3,5,18,roja,0,1,0,0,1,0,0,,1,el agente no contestó: venció el tope de seguridad; con 1 turno(s) medible(s) no llega al mínimo de 5 y hay que repetirla,vencimiento_de_la_espera
+campana_poc3_pcmu_reintentos,5,0005-poc3-e5-r1-bis,3,5,1,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu_reintentos,6,0006-poc3-e1-r2-bis,3,1,2,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu_reintentos,16,0016-poc3-e1-r4-bis,3,1,4,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu_reintentos,31,0031-poc3-e1-r7-bis,3,1,7,roja,0,1,0,0,0,0,1,,1,"el agente cerró la negociación y borró la sala en el último turno (el puente cerró el Media Stream); 1 turno(s) con texto y sin audio (T7): fuera del percentil, a confiabilidad",cerrada_por_agente
+campana_poc3_pcmu_reintentos,40,0040-poc3-e5-r8-bis,3,5,8,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu_reintentos,71,0071-poc3-e1-r15-bis,3,1,15,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente
+campana_poc3_pcmu_reintentos,73,0073-poc3-e3-r15-bis,3,3,15,ok,0,0,0,0,0,0,0,,1,guion_completo,guion_completo
+campana_poc3_pcmu_reintentos,90,0090-poc3-e5-r18-bis,3,5,18,ok,0,0,0,0,0,0,0,,1,cerrada_por_agente,cerrada_por_agente

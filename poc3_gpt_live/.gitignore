@@ -1,0 +1,11 @@
+# Call evidence: raw transcripts and any diagnostic audio.
+# May contain the voice and data of a real carrier (LFPDPPP).
+recordings/
+
+# In case someone ever leaves a local .env in the PoC folder. The project's
+# only .env lives at the root and is already gitignored there.
+.env
+.env.*
+
+# This PoC's uv environment. `pyproject.toml` and `uv.lock` are committed.
+.venv/

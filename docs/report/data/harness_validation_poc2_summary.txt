@@ -1,0 +1,21 @@
+Validación del arnés por el camino de PoC2 (sala de LiveKit Cloud, agente de retardo conocido)
+voz del agente falso: e1_t3
+system: Windows-11-10.0.26200-SP0 · python 3.12.13
+
+error = latencia reportada por el arnés − latencia real (ms)
+condición        turnos medidos sin med.   sesgo  mediana  desv.     mín     máx   |máx|   |p95|
+retardo_300          40      39        1   324.8    320.1   59.4   217.9   448.9   448.9   428.9
+retardo_1000         40      39        1   245.4    240.9   23.9   199.2   300.9   300.9   289.9
+retardo_2500         40      38        2   230.6    229.4   23.8   178.9   288.9   288.9   270.9
+nivel_-6             40      39        1   341.3    268.9  419.5   208.9  2888.9  2888.9   329.9
+nivel_-35            40      39        1   367.2    259.9  524.7   209.9  3310.9  3310.9  1509.9
+arranque_suave       40      39        1   284.9    287.9   28.2   227.9   349.9   349.9   348.9
+
+por lado (medias, ms): fin de voz = −ida · respuesta = vuelta
+condición         fin de voz   respuesta
+retardo_300           -172.6       152.1
+retardo_1000          -132.2       113.3
+retardo_2500          -126.7       103.9
+nivel_-6              -128.8       212.6
+nivel_-35             -133.6       233.6
+arranque_suave        -129.8       155.1

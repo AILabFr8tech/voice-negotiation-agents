@@ -1,0 +1,76 @@
+# Traducción al inglés de lo que dice cada audio del transportista, para la
+# versión en inglés del reporte. El reporte en español no la usa. Es de
+# referencia: en las pruebas solo sonó el español.
+#
+# Se traduce el texto del AUDIO, no el del guion: donde el recorte o la grabación
+# cambiaron la línea (`shared/metrics/referencia_del_audio.CORRECCIONES`), la
+# traducción sigue al audio. Una línea por clip reproducible del guion
+# (`escenarios.yaml`) y por clip del escenario de interrupciones
+# (`interrupciones.yaml`); un test verifica que no falte ni sobre ninguna.
+version: 1
+clips:
+  # Escenario 1 — cooperativo
+  e1_t1: "Yes, this is Carlos. Go ahead."
+  e1_t2: "Okay, sounds interesting. Can you tell me about the load first?"
+  e1_t3: "Uh-huh. And when do you need it in Laredo?"
+  e1_t4: "All right. And how much did you say the rate was?"
+  e1_t5: "Hmm. It's a little low, but it could work."
+  e1_t6: "You know what? If you make it a round number, I'll take it."
+  e1_t7: "Perfect. We have a deal, then."
+  e1_t8: "Yes, that's the deal. Confirmed."
+  # Escenario 2 — regateador moderado
+  e2_t1: "Yes, this is Carlos. Let's see, what have you got?"
+  e2_t2: "No, that's low for Monterrey–Laredo. Diesel is really expensive right now."
+  e2_t3: "What are you paying for that route?"
+  e2_t4: "Go up a little. I'm thinking eighteen thousand."
+  e2_t5: "Almost there. Just make it an even 18,000."
+  e2_t5_alt1: "The compensation is fine, but the number has to be eighteen."
+  e2_t5_alt2: "All right, now that works for me."
+  e2_t6: "Come on, it's a good route and I'll get it done fast. Seventeen… no, eighteen."
+  e2_t7: "Okay. We're set at eighteen thousand."
+  e2_t7_alt1: "Are you sure you can't move it any higher?"
+  e2_t8: "Deal, we're set at eighteen thousand. Confirmed."
+  e2_t8_alt1: "No, for less it doesn't work for me. Leave it there; contact me if it becomes possible."
+  # Escenario 3 — agresivo / ancla alta
+  e3_t1: "Hello, this is Carlos. What's this about?"
+  e3_t2: "Oh no, no way. I get paid twenty-eight thousand for that trip."
+  e3_t3: "You people don't know what diesel and tolls cost. 28,000, minimum."
+  e3_t4: "I don't care if it seems expensive to you. 28,000 or there's no trip."
+  e3_t5: "Okay, tell me what your cap is. What's the most you can pay?"
+  e3_t6: "Fine… I'll come down to twenty-five thousand, but from there…"
+  e3_t7: "No, twenty-five is my final price. Not one peso less."
+  e3_t8: "Then there's no deal. That's the end of it."
+  # Escenario 4 — objeción no monetaria
+  e4_t1: "Yes, this is Carlos. Go ahead."
+  e4_t2: "Look, the price is more or less okay. But I have other problems with that route."
+  e4_t3: "The problem is the loading time. They always keep me waiting for hours."
+  e4_t4: "Ah, that does help me. And will you guarantee it in writing?"
+  e4_t4_alt1: "I didn't ask you for more money. I asked you about the waiting time."
+  e4_t5: "And how flexible are you with the delivery date? Sometimes my jobs overlap."
+  e4_t6: "All right, that changes things."
+  e4_t6_alt1: "The price again. I'm talking to you about conditions, not money."
+  e4_t7: "Okay. With the conditions you're giving me, what does the rate come to in the end?"
+  e4_t8: "Okay, we're set with that. Confirmed."
+  e4_t8_alt1: "Well, without sorting out the waiting time, I don't like it. Let's leave it pending."
+  # Escenario 5 — prueba de estrés del reconocimiento
+  e5_t1: "Yes, this is Carlos, go ahead."
+  e5_t2: "Let me write this down. I run a 53-foot dry van, with a tare weight of fourteen tons, and it gives me twenty-two of payload."
+  e5_t3: "From here to Nuevo Laredo I take Highway 85, and the tolls alone cost me one thousand one hundred twenty pesos."
+  e5_t4: "Look, I'm not comfortable with that rate. I was thinking eighteen thousand… no, eighteen thousand five hundred."
+  e5_t5: "Another thing, I need the carta porte (the bill of lading) done right. Last month a load had to wait in Sabinas Hidalgo because of one wrong entry."
+  e5_t6: "Come on, now that works for me. With the trailer's tare weight, I can't do it for less."
+  e5_t7: "Right on, sure thing. We're set at 18,500."
+  e5_t8: "Yes, that's the deal, confirmed. Send me the carta porte by email."
+  # Escenario de interrupciones
+  int_01: "Hold on, hold on… how much did you say?"
+  int_02: "No, no, sorry, let me tell you something."
+  int_03: "Hey, does that include the tolls?"
+  int_04: "Okay, okay, I got it. And the advance payment?"
+  int_05: "Wait a moment, that's not what we agreed."
+  int_06: "Sorry to interrupt, but that doesn't work for me."
+  apo_01: "Uh-huh."
+  apo_02: "Mm-hm."
+  apo_03: "Yes."
+  apo_04: "OK."
+  apo_05: "Right."
+  apo_06: "Yeah, yeah."

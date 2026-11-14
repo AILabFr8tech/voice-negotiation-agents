@@ -1,0 +1,18 @@
+system: Windows 11 (10.0.26200)
+cpu: AMD Ryzen 5 3400G with Radeon Vega Graphics · núcleos lógicos: 8
+ram_gb: 13.9
+python: 3.12.13
+numpy: 2.5.2
+scipy: 1.18.1
+
+valores públicos del .env:
+  OPENAI_MODEL=gpt-4.1-mini
+  DEEPGRAM_MODEL=nova-3
+  DEEPGRAM_LANGUAGE=multi
+  ELEVENLABS_MODEL=eleven_flash_v2_5
+  ELEVENLABS_VOICE_ID=7uSWXMmzGnsyxZwYFfmK
+  LIVEKIT_TURN_DETECTOR_VERSION=v1-mini
+  OPENAI_LIVE_MODEL=gpt-live-1
+
+sesión de GPT-Live confirmada por el servidor (primer session.started):
+  5 llamadas: {}

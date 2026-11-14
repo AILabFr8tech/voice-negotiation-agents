@@ -1,0 +1,31 @@
+{
+  "source": "RE6d884c51d4b0250d802be9f1db2beceb.mp3 (grabacion Twilio del dispatcher, dual-channel)",
+  "note": "Calibracion PROVISIONAL. Es voz humana por la misma linea telefonica de Twilio, pero de otro sistema (dispatcher), no del agente negociador. Re-confirmar contra las 15 grabaciones 2-canales de PoC1 cuando haya acceso a la consola de Twilio.",
+  "measurement": {
+    "format_kind": "estereo dual-channel real, medido a 8 kHz",
+    "duration_s": 266.1,
+    "canal_0": {
+      "speech_rms_dbfs": -16.41,
+      "speech_rms_int16": 4954,
+      "pico_dbfs": -0.36,
+      "pct_with_speech": 29.2,
+      "aviso": "casi satura en pico"
+    },
+    "canal_1": {
+      "speech_rms_dbfs": -21.35,
+      "speech_rms_int16": 2805,
+      "pico_dbfs": -4.24,
+      "pct_with_speech": 10.2
+    }
+  },
+  "calibration_target": {
+    "metric": "RMS de los segmentos con voz (no del archivo completo, no del silencio)",
+    "valor_provisional_dbfs": -18.0,
+    "threshold_drop_db": 25.0,
+    "why_the_drop_goes_with_the_target": "El 'RMS de voz' se mueve hasta 9 dB segun que ventanas cuenten como voz, asi que el objetivo no significa nada sin su criterio. 25 dB bajo el pico es el valor que reproduce el factor de cresta de la medicion de referencia (16.05 y 17.11 dB en los dos canales); con 35 dB el mismo audio mide ~3 dB mas bajo. Al re-medir contra PoC1 hay que reportar los dos numeros juntos.",
+    "how_it_is_applied": "normalizar el RMS de voz de cada clip LIMPIO a este objetivo ANTES de degradar (resample 8k + mu-law), y verificar que tras degradar el RMS de voz caiga dentro de +/-1 dB del objetivo",
+    "if_you_identify_the_human_leg": "usar exactamente ese canal: canal_0 = -16.4 dBFS, canal_1 = -21.4 dBFS; si no, usar -18.0 provisional",
+    "comfort_noise_dbfs": -60.0,
+    "provisional": true
+  }
+}

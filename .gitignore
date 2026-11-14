@@ -1,0 +1,131 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Entornos virtuales ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- uv ---
+# uv.lock SÍ se commitea (build reproducible entre PoC).
+.uv-cache/
+
+# --- Testing / linters ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# --- Secretos ---
+# .env.example sí se commitea; .env nunca.
+.env
+.env.*
+!.env.example
+
+# --- Evidencia de llamadas (audio y transcripciones crudas: pesan y pueden
+# contener datos personales de transportistas — LFPDPPP) ---
+*.wav
+*.mp3
+*.ogg
+*.raw
+recordings/
+recordings/
+# Clips del arnés: los artefactos son la voz de una persona y pesan; el
+# `manifiesto.json` que los identifica por hash SÍ se commitea, y es la única
+# evidencia de que las 3 PoC reprodujeron el mismo audio.
+*.ulaw
+raw_clips/
+# El JSON por llamada se regenera en cada corrida y trae habla transcrita:
+# se queda en disco, no en el repo. El `resultado-*.json` agregado de un
+# diagnóstico SÍ se commitea — trae el diseño pre-registrado y las mediciones
+# que sostienen una decisión.
+call_*.json
+corrida_*.log
+# La grabación de auditoría del arnés: el `.wav` ya cae por la regla de arriba y
+# su `.json` solo describe ese archivo, así que fuera del repo no dice nada.
+auditoria_*.json
+# Calibración del detector de voz de PoC3: energía por ventana y la grabación de
+# las dos direcciones. Es la voz de quien actúa la corrida, ninguna de sus cifras
+# es reportable, y se borra al congelar el umbral. El código que lo produce sí se
+# versiona; lo que produce, no.
+poc3_gpt_live/diagnostics/energy/
+poc3_gpt_live/diagnostics/auditoria/
+# Lo que produce el arnés en cada corrida de diagnóstico. Se regenera corriendo
+# la herramienta de nuevo y lleva fechas dentro del nombre, así que versionarlo
+# solo acumula copias: lo que se conserva del hallazgo son los números citados
+# en `docs/CONTRATO_METRICAS.md`, no el archivo que los produjo.
+log_*.json
+cero_*.json
+zeros_*.jsonl
+# Y el archivo hermano que dice si esa llamada sirve para el análisis del cero:
+# se regenera con la corrida, y sin la corrida no significa nada.
+zeros_*.estado.json
+vad_*.json
+# El parte de las siete revisiones de una corrida: es un dictamen sobre el
+# artefacto de al lado, que tampoco se versiona. Una campaña de 84 llamadas
+# dejaría 84 sueltos en `git status`; lo que sobrevive del veredicto es lo que
+# se cite en `docs/`.
+verification_*.json
+
+# --- Documentación del alpha de GPT-Live ---
+# Está bajo el acuerdo de confidencialidad del alpha: se queda en la copia local
+# de quien participó en él y no viaja en el repo (ver docs_alpha/README.md).
+**/docs_alpha/*.html
+**/docs_alpha/*.html.txt
+
+# --- Editores / SO ---
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+
+# --- Modo lote del arnés ---
+# Cada campaña deja resúmenes con habla transcrita, logs por llamada y el
+# progreso. Se regenera corriendo el lote de nuevo; lo que se conserva es lo
+# que se cite en `docs/`.
+diagnostics/lote/
+# Marcas y verdad de cada corrida de `validation.validar_arnes`: intermedios; el
+# resultado que se cita va a `docs/reporte/datos/validacion_arnes*.`
+diagnostics/harness_validation/
+# Audios de los turnos de PoC3 sin latencia, para oírlos y anotarlos
+# (`validation.turnos_sin_latencia_poc3`). Llevan voz del agente.
+diagnostics/turns_without_latency_poc3/
+# Escenario de interrupciones: las grabaciones crudas y lo que deja su validación.
+raw_interruption_clips/
+diagnostics/interruption_validation/
+diagnostics/interruption_cuts*/
+# Logs de las campañas y recortes para oír respuestas sueltas: llevan habla
+# transcrita y voz del agente (la página de respuestas rápidas trae el audio de
+# PoC3 incrustado).
+diagnostics/*.log
+diagnostics/recortes_sonido_previous/
+diagnostics/replies_rapidas_poc3/
+
+# Compilación del reporte y del artículo: se regenera con pdflatex; los PDF,
+# borradores y versiones con cambios marcados incluidos, se entregan aparte.
+docs/report/latex/*.aux
+docs/report/latex/*.log
+docs/report/latex/*.out
+docs/report/latex/*.toc
+docs/report/latex/*.lof
+docs/report/latex/*.lot
+docs/report/latex/*.pdf
+docs/paper/**/*.pdf
+docs/paper/**/*.aux
+docs/paper/**/*.log
+docs/paper/**/*.out
+docs/paper/**/*.bbl
+docs/paper/**/*.blg

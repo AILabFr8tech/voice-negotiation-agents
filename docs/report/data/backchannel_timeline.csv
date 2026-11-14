@@ -1,0 +1,10 @@
+clave,que,start_s,end_s,text
+0004-poc1-e2-r1,linea,0.0,5.45,"Ándele, es una buena ruta y se la hago rápida. Diecisiete… no, dieciocho mil."
+0004-poc1-e2-r1,transcripcion_de_la_linea,5.315,,"Ándele, una buena ruta y se la hago rápida. Diecisiete, no."
+0004-poc1-e2-r1,agente_antes,8.851,11.158,"Carlos, puedo subir la oferta a dieciséis"
+0004-poc1-e2-r1,apoyo,10.366,10.696,Ok.
+0004-poc1-e2-r1,transcripcion_del_apoyo,11.159,,Ok.
+0004-poc1-e2-r1,registrar_acuerdo,12.622,,monto_final=16500
+0004-poc1-e2-r1,agente_despues,13.412,22.992,"Perfecto, Carlos. Quedamos en dieciséis mil quinientos pesos con hasta dos horas de tiempo de espera pagado en carga o descarga. ¿Confirmamos así el acuerdo?"
+0004-poc1-e2-r1,linea_siguiente,25.015,27.175,Va. En dieciocho mil quedamos.
+0004-poc1-e2-r1,cuelga,25.228,,

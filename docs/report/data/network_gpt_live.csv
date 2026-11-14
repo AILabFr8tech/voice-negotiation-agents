@@ -1,0 +1,2 @@
+date,host,ip,attempts,p50_ms,min_ms,max_ms
+2026-10-21,api.openai.com,172.66.0.243,15,42.2,41.5,65.9
